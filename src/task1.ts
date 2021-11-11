@@ -1,4 +1,4 @@
-let arr :Array<number>[] = [[1,2,3.5,4],[1,2.5,5.3],[0.5,0.6,2]]
+const arr :Array<number>[] = [[1,2,3.5,4],[1,2.5,5.3],[0.5,0.6,2]]
 
 function sumAverage(arr:Array<Array<number>>){
     const averageSum= averageValueArr(arr)
