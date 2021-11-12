@@ -5,7 +5,7 @@ function patternAmount(num: number) {
     return combinationArr
 }
 
-function fillArray(num: number) {
+export function fillArray(num: number) {
     let arr: Array<number> = []
     for (let value = 1; value <= num; value++) {
         arr.push(value)

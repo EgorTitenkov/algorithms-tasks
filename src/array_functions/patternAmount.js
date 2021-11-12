@@ -1,6 +1,6 @@
 function patternAmount(num) {
     var arr = fillArray(num);
-    var combinationArr = makeCombinationArr(arr);
+    var combinationArr = makeCombinationArray(arr);
     combinationArr.unshift(arr.join(""));
     return combinationArr;
 }
@@ -11,7 +11,7 @@ function fillArray(num) {
     }
     return arr;
 }
-function makeCombinationArr(arr) {
+function makeCombinationArray(arr) {
     var combinationArr = [];
     var tempArr = arr.slice(0);
     var lastNum = arr[arr.length - 1];
@@ -20,6 +20,7 @@ function makeCombinationArr(arr) {
         tempArr.shift();
         combinationArr.push(tempArr.join(""));
     }
+    console.log(arr);
     return combinationArr;
 }
 console.log(patternAmount(6));
