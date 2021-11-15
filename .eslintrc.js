@@ -1,22 +1,26 @@
 module.exports = {
     env: {
-        es6: true,
         browser: true,
-        node: true,
+        es6: true,
     },
-    extends: ['airbnb', 'plugin:jest/recommended', 'jest-enzyme'],
-    plugins: [
-        'babel',
-        'import',
-        'jsx-a11y',
-        'react',
-        'prettier',
+    plugins: ['"@typescript-eslint"'],
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
     ],
-    parser: 'babel-eslint',
+    globals: {
+        Atomics: 'readonly',
+        SharedArrayBuffer: 'readonly',
+    },
     parserOptions: {
-        ecmaVersion: 6,
-        sourceType: 'module'
+        ecmaVersion: 2018,
+        sourceType: 'module',
     },
     rules: {
+        indent: ['error', 'tab'],
+        'linebreak-style': ['error', 'windows'],
+        quotes: ['error', 'single'],
+        semi: ['error', 'always'],
     },
 };

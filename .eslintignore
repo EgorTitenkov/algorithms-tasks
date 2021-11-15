@@ -1,3 +1,2 @@
-/.git
-/.webstorm
 node_modules
+dist

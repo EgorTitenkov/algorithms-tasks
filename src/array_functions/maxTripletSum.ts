@@ -4,7 +4,7 @@ function maxTripletSum(arr: Array<number>) {
   const uniqueArr = createUniqueArr(arr);
   const sortedArr = uniqueArr.sort((a, b) => a - b);
   const threeMaxNums = sortedArr.slice(sortedArr.length - 3, sortedArr.length);
-  const resultSum = threeMaxNums.reduce((acc, value) => acc + value);
+  const resultSum: number = threeMaxNums.reduce((acc, value) => acc + value);
   return resultSum;
 }
 

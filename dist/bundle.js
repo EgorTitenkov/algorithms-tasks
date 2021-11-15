@@ -1,1 +1,0 @@
-console.log(function(n){var r=function(n){return n.map((function(n){return n.reduce((function(n,r){return n+r}))/n.length})).reduce((function(n,r){return n+r}))}([[1,2,3.5,4],[1,2.5,5.3],[.5,.6,2]]);return Math.floor(r)}());

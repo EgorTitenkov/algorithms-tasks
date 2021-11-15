@@ -5,7 +5,7 @@ function arithmeticSequenceSum(num: number, value: number, elementsCount: number
     const element = num + value * i;
     arr.push(element);
   }
-  const arithmeticSum = arr.reduce((acc, value) => acc + value);
+  const arithmeticSum: number = arr.reduce((acc, value) => acc + value);
   return arithmeticSum;
 }
 
