@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    entry: './src/string_functions/countDuplicates.ts',
+    entry: './src/algorithms_and_functional_programming/flattenAndSort.ts',
     devtool: 'inline-source-map',
     module: {
         rules: [
