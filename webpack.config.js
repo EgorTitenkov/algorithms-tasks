@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    entry: './src/higher_order_functions/zipWith.ts',
+    entry: './src/recursion/sequenceSum.ts',
     devtool: 'inline-source-map',
     module: {
         rules: [
