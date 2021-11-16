@@ -3,7 +3,7 @@ interface String {
 }
 
 String.prototype.customUpperCase = function () {
-    let result = this.toUpperCase()
+    let result : string = this.toUpperCase()
     return result
 };
 
