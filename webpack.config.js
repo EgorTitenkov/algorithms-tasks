@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    entry: './src/higher_order_functions/spread.ts',
+    entry: './src/higher_order_functions/zipWith.ts',
     devtool: 'inline-source-map',
     module: {
         rules: [
