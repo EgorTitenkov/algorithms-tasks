@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    entry: './src/algorithms_and_functional_programming/compose.ts',
+    entry: './src/higher_order_functions/spread.ts',
     devtool: 'inline-source-map',
     module: {
         rules: [
