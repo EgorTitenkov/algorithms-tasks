@@ -1,9 +1,5 @@
-const zipWith = (fn:Function, arr1:Array<number>, arr2:Array<number>) => {
-    let result:Array<number> = []
-    for (let i = 0; i < arr1.length && i < arr2.length; i++) {
-        result = [...result, fn(arr1[i], arr2[i])]
-    }
-    return result
-}
+const zipWith = (fn:Function, arr1:Array<number>, arr2:Array<number>) =>
+    Array.from({ length: Math.min(arr1.length, arr2.length) }, (_, i) => fn(arr1[i], arr2[i]))
 
-console.log(zipWith(Math.max,[1,2,3,4], [3,1,5,2,5,2,3]))
+console.log(zipWith(Math.max, [1, 2, 3, 4], [3, 1, 5, 2, 5, 2, 3]))
+
