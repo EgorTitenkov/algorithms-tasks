@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    entry: './src/recursion/sequenceSum.ts',
+    entry: './src/string_functions/toMachineName.ts',
     devtool: 'inline-source-map',
     module: {
         rules: [

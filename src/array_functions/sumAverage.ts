@@ -14,12 +14,9 @@ function averageValueArr(arr: Array<Array<number>>) {
   const averageValueArr = arr.map((innerArr) => {
     return innerArr.reduce((acc, value) => acc + value) / innerArr.length;
   });
-  return averageSumValue(averageValueArr);
-}
-
-function averageSumValue(averageValueArr: Array<number>) {
   const averageSum = averageValueArr.reduce((acc, value) => acc + value);
   return averageSum;
 }
+
 
 console.log(sumAverage(arr));

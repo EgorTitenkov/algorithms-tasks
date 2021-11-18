@@ -7,23 +7,23 @@ function toArabic(romanNumber: string) {
         X: 10,
         V: 5,
         I: 1,
-    };
+    }
 
     const nums = romanNumber.split('');
-    let result: number = 0;
+    let result: number = 0
 
     for (let i = 0; i < nums.length; i++) {
-        const first = map[nums[i]];
-        const second = map[nums[i + 1]] ?? 0;
+        const first = map[nums[i]]
+        const second = map[nums[i + 1]] ?? 0
         if (first < second) {
-            result += second - first;
-            i += 1;
+            result += second - first
+            i += 1
         } else {
-            result += first;
+            result += first
         }
     }
     return result;
 }
 
-console.log(toArabic('CMXI')); // 911
-console.log(toArabic('MXXIV')); // 1024
+console.log(toArabic('CMXI')) // 911
+console.log(toArabic('XXI')) // 21
