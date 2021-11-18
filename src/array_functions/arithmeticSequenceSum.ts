@@ -1,12 +1,13 @@
 function arithmeticSequenceSum(num: number, value: number, elementsCount: number) {
-    const arr: Array<number> = [];
-    arr.push(num);
-    for (let i = 1; i <= elementsCount - 1; i++) {
-        const element = num + value * i;
-        arr.push(element);
-    }
-    const arithmeticSum: number = arr.reduce((acc, value) => acc + value);
-    return arithmeticSum;
+   const arr: Array<number> = []
+   let newArr: Array<number> = []
+   newArr.push(num)
+   newArr = arr.map((element) => {
+      const el = num + value * arr.indexOf(element)
+      return el
+   })
+   const arithmeticSum: number = newArr.reduce((acc, value) => acc + value)
+   return arithmeticSum
 }
 
-console.log(arithmeticSequenceSum(2, 3, 5));
+console.log(arithmeticSequenceSum(2, 3, 5))
