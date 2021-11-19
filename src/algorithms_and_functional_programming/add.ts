@@ -1,7 +1,7 @@
 function add(n: number) {
-    return function (y: number) {
-        return n + y
-    }
+   return function (y: number) {
+      return n + y
+   }
 }
 
 const add2 = add(2)

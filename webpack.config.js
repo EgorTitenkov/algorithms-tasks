@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    entry: './src/string_functions/toMachineName.ts',
+    entry: './src/higher_order_functions/zipWith.ts',
     devtool: 'inline-source-map',
     module: {
         rules: [

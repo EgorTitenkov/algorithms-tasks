@@ -1,9 +1,9 @@
-let arr3: Array<number> = [3, 30, 34, 5, 9];
+let arr3: Array<number> = [3, 30, 34, 5, 9]
 
 function biggest(arr: Array<number>) {
-  const sortedArr = arr.sort().reverse();
-  const biggestNum: string = sortedArr.reduce((acc, value) => acc + value, '');
-  return biggestNum;
+   const sortedArr = arr.sort().reverse()
+   const biggestNum: string = sortedArr.reduce((acc, value) => acc + value, '')
+   return biggestNum
 }
 
-console.log(biggest(arr3));
+console.log(biggest(arr3))
