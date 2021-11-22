@@ -4,7 +4,6 @@
   "description": "Algorithms",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "prettier": "prettier --write src/**/*.ts",
     "lint": "eslint ./src/**/* --fix",
