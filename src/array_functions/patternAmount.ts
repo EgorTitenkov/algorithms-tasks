@@ -1,20 +1,6 @@
-function patternAmount(num: number) {
-   const arr = [...Array(5).keys()]
-   const combinationsArr = makeCombinationArray(arr)
-   combinationsArr.unshift(arr.join(''))
-   return combinationsArr
+function patternAmount(num : number){
+   return Array.from({ length: num }, (x, i) =>
+       Array.from({ length: num }, (x, j) => (i + j) % num + 1).join('')
+   ).join('\n')
 }
-
-function makeCombinationArray(arr: Array<number>) {
-   const combinationsArr:Array<string> = []
-   const tempArr = arr.slice(0)
-   const lastNum = arr[arr.length - 1]
-   while (tempArr.indexOf(lastNum) != 0) {
-      tempArr.push(tempArr[0])
-      tempArr.shift()
-      combinationsArr.push(tempArr.join(''))
-   }
-   return combinationsArr
-}
-
 console.log(patternAmount(6))
