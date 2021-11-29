@@ -1,10 +1,12 @@
-class Singleton {
-   private static instance: Object
-   constructor() {
-      if (typeof Singleton.instance === 'object') {
-         return Singleton.instance
+export class Singleton {
+   private static instance: Singleton
+   private constructor() {}
+
+   public static getInstance(): Singleton {
+      if (!Singleton.instance) {
+         Singleton.instance = new Singleton()
       }
-      Singleton.instance = this
-      return this
+
+      return Singleton.instance
    }
 }

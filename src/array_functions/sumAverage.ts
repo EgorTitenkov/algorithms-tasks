@@ -1,21 +1,15 @@
-const arr: Array<number>[] = [
-   [1, 2, 3.5, 4],
-   [1, 2.5, 5.3],
-   [0.5, 0.6, 2],
-]
-
-function sumAverage(arr: Array<Array<number>>) {
-   const averageSum = averageValueArr(arr)
-   const result: number = Math.floor(averageSum)
-   return result
+export function sumAverage(arr: Array<Array<number>>) : number{
+   const averageSum = arr
+      .map((innerArr) => {
+         return innerArr.reduce((acc, value) => acc + value) / innerArr.length
+      })
+      .reduce((acc, value) => acc + value)
+   return Math.floor(averageSum)
 }
 
-function averageValueArr(arr: Array<Array<number>>) {
-   const averageValueArr = arr.map((innerArr) => {
-      return innerArr.reduce((acc, value) => acc + value) / innerArr.length
-   })
-   const averageSum = averageValueArr.reduce((acc, value) => acc + value)
-   return averageSum
-}
-
-console.log(sumAverage(arr))
+// const arr: Array<number>[] = [
+//    [1, 2, 3.5, 4],
+//    [1, 2.5, 5.3],
+//    [0.5, 0.6, 2],
+// ]
+// console.log(sumAverage(arr))

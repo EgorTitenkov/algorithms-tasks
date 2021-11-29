@@ -1,24 +1,16 @@
-function alphabetized(text: string) {
-   const symbolArray = text.split('')
-   const sortedString = symbolArray.sort(comparison).join('')
-   const resultStr: string = erasePunctuationMark(sortedString).join('')
-   return resultStr
+export function alphabetized(text: string) : string {
+   return text
+      .replace(/[^A-Za-z]/g, '')
+      .split('')
+      .reduce(
+         (acc, e, i, arr) => i == arr.join('').toLowerCase().indexOf(e.toLowerCase())
+               ? [...acc, arr.filter((c) => c.toLowerCase() == e.toLowerCase())]
+               : acc,
+         [],
+      )
+      .map((e) => e.join(''))
+      .sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }))
+      .join('')
 }
 
-function comparison(a: string, b: string) {
-   const comparison: number = a.toLowerCase().localeCompare(b.toLowerCase())
-   if (comparison === 0) {
-      return a.localeCompare(b)
-   }
-   return comparison
-}
-
-function erasePunctuationMark(str: string) {
-   const letterArr = str.split('')
-   const filteredArr: Array<string> = letterArr.filter(
-      (sym) => sym != ' ' && sym != ',' && sym != '!' && sym != '?' && sym != '.',
-   )
-   return filteredArr
-}
-
-console.log(alphabetized('!! !Acgqbg  !.Hwrt!!!?., '))
+// console.log(alphabetized('!! !Acgqbg  !.Hwrt!!!?., '))

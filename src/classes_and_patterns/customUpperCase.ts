@@ -2,9 +2,8 @@ interface String {
    customUpperCase(): string
 }
 
-String.prototype.customUpperCase = function () {
-   let result: string = this.toUpperCase()
-   return result
+String.prototype.customUpperCase = function () : string {
+   return this.toUpperCase()
 }
 
-console.log('egor'.customUpperCase())
+// console.log('egor'.customUpperCase())

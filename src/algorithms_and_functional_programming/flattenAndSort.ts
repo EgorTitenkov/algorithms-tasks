@@ -1,8 +1,6 @@
-const arr4: Array<Array<number>> = [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]
+// const arr4: Array<Array<number>> = [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]
+// console.log(flattenAndSort(arr4))
 
-function flattenAndSort(arr: Array<Array<number>>) {
-   const unitedArr: Array<Array<number>> = [].concat(...arr).sort()
-   return unitedArr
+export function flattenAndSort(arr: Array<Array<number>>): Array<Array<number>> {
+   return [].concat(...arr).sort()
 }
-
-console.log(flattenAndSort(arr4))

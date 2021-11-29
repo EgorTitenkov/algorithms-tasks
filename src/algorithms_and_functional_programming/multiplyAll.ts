@@ -1,12 +1,10 @@
-const arr5 = [1, 5, 7, 8, 2, 3]
-
-function multiplyAll(arr: Array<number>) {
-   return function (multiplier: number) {
-      const multipliedArr = arr.map((num) => {
+export function multiplyAll(arr: Array<number>) : (multiplier: number) => number[] {
+   return function (multiplier) {
+      return arr.map((num) => {
          return num * multiplier
       })
-      return multipliedArr
    }
 }
 
-console.log(multiplyAll(arr5)(2))
+// const arr5 = [1, 5, 7, 8, 2, 3]
+// console.log(multiplyAll(arr5)(2))
