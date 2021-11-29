@@ -8,7 +8,7 @@ export class MyNode {
    }
 }
 
-export function stringify(list: MyNode) : string {
+export function stringify(list: MyNode): string {
    const result: string = list === null ? 'null' : `${list.data} -> ${stringify(list.next)}`
    return result
 }

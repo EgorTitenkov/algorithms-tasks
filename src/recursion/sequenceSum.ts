@@ -1,4 +1,4 @@
-export function sequenceSum(begin: number, end: number, step: number) : number{
+export function sequenceSum(begin: number, end: number, step: number): number {
    if (begin > end) {
       return 0
    } else if (begin === end || begin + step > end) {

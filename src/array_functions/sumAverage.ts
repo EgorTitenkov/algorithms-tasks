@@ -1,4 +1,4 @@
-export function sumAverage(arr: Array<Array<number>>) : number{
+export function sumAverage(arr: Array<Array<number>>): number {
    const averageSum = arr
       .map((innerArr) => {
          return innerArr.reduce((acc, value) => acc + value) / innerArr.length

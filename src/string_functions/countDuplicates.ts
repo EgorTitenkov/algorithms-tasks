@@ -1,4 +1,4 @@
-export function countDuplicates(text: string) : number {
+export function countDuplicates(text: string): number {
    return (
       text
          .toLowerCase()

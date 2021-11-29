@@ -1,4 +1,4 @@
-export function toArabic(romanNumber: string) : number {
+export function toArabic(romanNumber: string): number {
    const map = {
       M: 1000,
       D: 500,

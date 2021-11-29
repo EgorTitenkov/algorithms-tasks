@@ -15,7 +15,9 @@ import {patternAmount} from "./array_functions/patternAmount";
 import {spread} from "./higher_order_functions/spread";
 import {MyNode, stringify} from "./recursion/stringify";
 import {reduce} from "./algorithms_and_functional_programming/reduce";
+import {toMachineName} from "./string_functions/toMachineName";
 
+console.log(toMachineName('312Hello       22my name is Egor', '-'))
 
 
 

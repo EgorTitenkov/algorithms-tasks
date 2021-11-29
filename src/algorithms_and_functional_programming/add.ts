@@ -1,5 +1,5 @@
-export function add(n: number) : (y: number) => number {
-   return function (y){
+export function add(n: number): (y: number) => number {
+   return function (y) {
       return n + y
    }
 }
