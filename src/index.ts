@@ -16,9 +16,8 @@ import {spread} from "./higher_order_functions/spread";
 import {MyNode, stringify} from "./recursion/stringify";
 import {reduce} from "./algorithms_and_functional_programming/reduce";
 import {toMachineName} from "./string_functions/toMachineName";
+import {biggest} from "./array_functions/biggest";
 
-console.log(toMachineName('312Hello       22my name is Egor', '-'))
-
-
-
+let arr3: Array<number> = [10,2]
+console.log(biggest(arr3))
 

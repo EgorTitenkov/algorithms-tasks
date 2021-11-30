@@ -1,7 +1,7 @@
 export function add(n: number): (y: number) => number {
-   return function (y) {
-      return n + y
-   }
+  return function (y) {
+    return n + y
+  }
 }
 
 // const add2 = add(2)
