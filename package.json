@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "prettier": "prettier --write src/**/*.ts",
-    "lint": "eslint ./src/**/* --fix",
+    "lint": "eslint -c './.eslintrc' --fix './src/**/*.ts'",
     "dev": "webpack --mode development"
   },
   "keywords": [

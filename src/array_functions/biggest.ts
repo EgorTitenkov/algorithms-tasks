@@ -1,4 +1,4 @@
-export function biggest(nums: Array<number>) {
+export function biggest(nums: Array<number>): string {
   return (
     nums
       .map((num) => num.toString())

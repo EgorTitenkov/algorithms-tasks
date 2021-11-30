@@ -9,13 +9,10 @@ export function toArabic(romanNumber: string): number {
     I: 1,
   }
   const arrNums = romanNumber.split('').map((el) => map[el])
-  return arrNums.reduce(
-    (sum: number, cur: number, i: number, a: Array<number>) => {
-      if (cur < a[i + 1]) return sum - cur
-      return sum + cur
-    },
-    0
-  )
+  return arrNums.reduce((sum: number, cur: number, i: number, a: Array<number>) => {
+    if (cur < a[i + 1]) return sum - cur
+    return sum + cur
+  }, 0)
 }
 
 // console.log(toArabic('XXI')) // 21

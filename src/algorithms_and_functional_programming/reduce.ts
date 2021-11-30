@@ -5,12 +5,7 @@ export function reduce<T>(
 ): T {
   let value = initialValue
   const result = arr.map((currentValue) => {
-    return (value = reducer(
-      value,
-      currentValue,
-      arr.indexOf(currentValue),
-      arr
-    ))
+    return (value = reducer(value, currentValue, arr.indexOf(currentValue), arr))
   })
   return result[result.length - 1]
 }
