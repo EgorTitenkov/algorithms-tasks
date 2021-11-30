@@ -18,6 +18,4 @@ import {reduce} from "./algorithms_and_functional_programming/reduce";
 import {toMachineName} from "./string_functions/toMachineName";
 import {biggest} from "./array_functions/biggest";
 
-let arr3: Array<number> = [10,2]
-console.log(biggest(arr3))
-
+console.log(reduce(["1", "2", "2", "4"], (acc, value) => acc + value, "1"))
