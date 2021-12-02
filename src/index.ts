@@ -17,5 +17,8 @@ import {MyNode, stringify} from "./recursion/stringify";
 import {reduce} from "./algorithms_and_functional_programming/reduce";
 import {toMachineName} from "./string_functions/toMachineName";
 import {biggest} from "./array_functions/biggest";
+import {multiplyAll} from "./algorithms_and_functional_programming/multiplyAll";
+import {add} from "./algorithms_and_functional_programming/add";
 
-console.log(reduce(["1", "2", "2", "4"], (acc, value) => acc + value, "1"))
+const add2 = add(2)(5)
+console.log(add2)
