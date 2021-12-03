@@ -9,5 +9,3 @@ export function reduce<T>(
   })
   return result[result.length - 1]
 }
-
-// console.log(reduce(["1", "2", "2", "4"], (acc, value) => acc + value, "1"))

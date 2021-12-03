@@ -8,5 +8,3 @@ export function sequenceSum(begin: number, end: number, step: number): number {
     return result
   }
 }
-
-// console.log(sequenceSum(1, 7, 3))

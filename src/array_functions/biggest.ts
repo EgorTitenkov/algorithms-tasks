@@ -7,6 +7,3 @@ export function biggest(nums: Array<number>): string {
       .replace(/^0+/, '') || '0'
   )
 }
-
-// let arr3: Array<number> = [3, 30, 34, 5, 9]
-// console.log(biggest(arr3))

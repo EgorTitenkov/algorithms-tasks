@@ -3,5 +3,3 @@ export function patternAmount(num: number): string {
     Array.from({ length: num }, (x, j) => ((i + j) % num) + 1).join('')
   ).join('\n')
 }
-
-// console.log(patternAmount(6))

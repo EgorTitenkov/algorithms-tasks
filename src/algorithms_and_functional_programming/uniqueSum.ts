@@ -4,6 +4,3 @@ export function uniqueSum(arr: Array<number>): number {
     return acc + value
   })
 }
-
-// const arr6: Array<number> = [1, 2, 3, 3, 4, 5]
-// console.log(uniqueSum(arr6))

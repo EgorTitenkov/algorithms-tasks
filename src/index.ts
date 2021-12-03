@@ -20,4 +20,4 @@ import {biggest} from "./array_functions/biggest";
 import {multiplyAll} from "./algorithms_and_functional_programming/multiplyAll";
 import {add} from "./algorithms_and_functional_programming/add";
 
-console.log(toMachineName('312Hello2       1my name is Egor', '-'))
+console.log(toMachineName('312Hello       my name is Egor', '-'))

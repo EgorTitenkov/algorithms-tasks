@@ -3,5 +3,3 @@ export function arithmeticSequenceSum(a: number, r: number, n: number): number {
     .fill(a)
     .reduce((sum, v, i) => sum + v + i * r)
 }
-
-//console.log(arithmeticSequenceSum(2, 3, 5))

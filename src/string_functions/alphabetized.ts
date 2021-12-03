@@ -13,5 +13,3 @@ export function alphabetized(text: string): string {
     .sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }))
     .join('')
 }
-
-// console.log(alphabetized('!! !Acgqbg  !.Hwrt!!!?., '))
