@@ -20,5 +20,4 @@ import {biggest} from "./array_functions/biggest";
 import {multiplyAll} from "./algorithms_and_functional_programming/multiplyAll";
 import {add} from "./algorithms_and_functional_programming/add";
 
-const add2 = add(2)(5)
-console.log(add2)
+console.log(toMachineName('312Hello2       1my name is Egor', '-'))

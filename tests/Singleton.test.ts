@@ -1,17 +1,16 @@
-import {mocked} from "ts-jest/utils";
 import {Singleton} from "../src/classes_and_patterns/Singleton";
+import {reduce} from "../src/algorithms_and_functional_programming/reduce";
 
-jest.mock('../src/classes_and_patterns/Singleton', () => ({
-    Singleton: jest.fn(),
-}))
-
-describe('Singleton Test', () => {
-    it('', () => {
-        const object1 = jest.fn()
-
-        const SingletonMock: any = mocked(Singleton, true)
-        object1.mockImplementation(() => ({
-            
-        }))
-    })
+test('singleton first test', () => {
+    const object1 = Singleton.getInstance()
+    const object2 = Singleton.getInstance()
+    expect((object1 === object2)).toBe(true)
 })
+
+test('singleton first test', () => {
+    const object1 = Singleton.getInstance()
+    const object2 = {}
+    expect((object1 === object2)).toBe(false)
+})
+
+

@@ -1,5 +1,5 @@
 export function toMachineName(name: string, separator: string) {
-  let str = name.toLowerCase().replace(/[0-9]/g, '')
+  let str = name.toLowerCase().replace(/\w[0-9]\w/, '')
   return str
     .split(' ')
     .filter((word) => word)
